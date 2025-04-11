@@ -1,0 +1,210 @@
+/* src/components/Navigation.css */
+
+.main-navigation {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+/* Logo styling */
+.nav-logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.bentley-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-name {
+    color: #002b54; /* Bentley blue */
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #444;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    background-color: #e5f0f9; /* Light blue */
+    color: #002b54; /* Bentley blue */
+}
+
+.nav-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.create-post-link {
+    background-color: #002b54; /* Bentley blue */
+    color: white !important;
+}
+
+.create-post-link:hover {
+    background-color: #001e3b; /* Darker blue */
+}
+
+/* Profile section */
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #444;
+    transition: background-color 0.2s;
+}
+
+.profile-link:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+.profile-link.active {
+    background-color: #e5f0f9; /* Light blue */
+    color: #002b54; /* Bentley blue */
+}
+
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #002b54; /* Bentley blue */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.profile-name {
+    font-weight: 500;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #002b54; /* Bentley blue */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-container {
+        height: auto;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 0;
+        order: 4;
+    }
+
+    .nav-links.mobile-active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .nav-profile {
+        margin-left: auto;
+        order: 2;
+    }
+
+    .profile-name {
+        display: none;
+    }
+
+    .nav-logo {
+        order: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .bentley-logo {
+        height: 30px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+
+    .profile-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+}
+
+.bentley-logo-text {
+    width: 40px;
+    height: 40px;
+    background-color: #002b54; /* Bentley blue */
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}

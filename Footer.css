@@ -1,0 +1,66 @@
+.footer {
+    background-color: #002b54; /* Bentley blue */
+    color: white;
+    padding: 16px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-logo small {
+    margin-top: 4px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.separator {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        align-items: center;
+    }
+}

@@ -1,0 +1,128 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f9;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-header h1 {
+    color: #002b54; /* Bentley University blue */
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.login-form {
+    margin-bottom: 24px;
+}
+
+.error-message {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #002b54; /* Bentley University blue */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 43, 84, 0.1);
+}
+
+.login-button {
+    background-color: #002b54; /* Bentley University blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #001e3b; /* Darker blue */
+}
+
+.login-button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+.login-footer {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.login-footer p {
+    margin-bottom: 10px;
+}
+
+.login-footer a {
+    color: #002b54; /* Bentley University blue */
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 24px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+}
